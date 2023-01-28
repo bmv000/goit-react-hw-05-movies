@@ -1,4 +1,4 @@
-import { Link, Outlet, useNavigate, useLocation } from 'react-router-dom';
+import {  Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { useFetchDetails } from '../../hooks/FetchDetails/useFetchDetails';
 
 import { AiOutlineArrowLeft } from 'react-icons/ai';
