@@ -8,8 +8,8 @@ import {
   MovieList,
 } from './Movies.styled';
 import { useState, useEffect } from 'react';
-import { useSearchParams, useLocation, Link, Outlet } from 'react-router-dom';
-// import { AiOutlineSearch } from 'react-icons/ai';
+import { useSearchParams, useLocation, Outlet } from 'react-router-dom';
+
 import { Loader } from '../../components/Loader/Loader';
 import { toast } from 'react-toastify';
 import { fetchMoviesSearch } from '../../servises/api/EventAPI';
