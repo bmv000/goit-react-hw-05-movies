@@ -65,10 +65,20 @@ export const MovieDetails = () => {
           <MovieAddition>
             <MovieOptionTitle>Addition information</MovieOptionTitle>
             <li>
-              <MovieAdditionLink to="cast">Cast</MovieAdditionLink>
+              <MovieAdditionLink
+                state={{ from: location.state?.from }}
+                to="cast"
+              >
+                Cast
+              </MovieAdditionLink>
             </li>
             <li>
-              <MovieAdditionLink to="reviews">Reviews</MovieAdditionLink>
+              <MovieAdditionLink
+                state={{ from: location.state?.from }}
+                to="reviews"
+              >
+                Reviews
+              </MovieAdditionLink>
             </li>
           </MovieAddition>
 

@@ -7,6 +7,9 @@ export const Cast = () => {
   const posterPathBase = 'https://image.tmdb.org/t/p/w500';
   return (
     <>
+      {cast?.length === 0 && (
+        <p>We don't have any cast for this movie! </p>
+      )}
       {cast && (
         <CastList>
           {cast.map(({ cast_id, character, name, profile_path }) => (
